@@ -1,0 +1,26 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 300px
+}
+ul{
+    list-style: none;
+    /* border: 1px solid black; */
+    width: 150px;
+    height: 30px;
+
+
+}
+ul li{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+i{
+margin-left: 5px;
+}
