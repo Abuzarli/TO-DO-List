@@ -8,7 +8,7 @@ input{
     width: 300px
 }
 ul{
-    list-style: none;
+    /* list-style: none; */
     /* border: 1px solid black; */
     width: 150px;
     height: 30px;

@@ -4,6 +4,10 @@ let list = document.querySelector(".todos")
 
 toDoForm.addEventListener("submit",(e)=>{
     e.preventDefault();
+    if (TodoInp.value===''){
+        alert("You must write something!");
+    }
+    else{
    list.innerHTML+=`<li class="list-group-item">
    <span>${TodoInp.value}</span>
    <div>
@@ -12,7 +16,7 @@ toDoForm.addEventListener("submit",(e)=>{
    </div>
    </li>`
    TodoInp.value=""
-
+    }
    
    let dones =document.querySelectorAll(".done");
    dones.forEach(item => {
@@ -24,6 +28,7 @@ toDoForm.addEventListener("submit",(e)=>{
 let removes= document.querySelectorAll(".remove");
 removes.forEach(item => {
     item,addEventListener("click",function(){
-        this.parentElement.previousElementSibling.style.display="none"
+        this.parentElement.style.display="none"
     })
 });
+
