@@ -14,10 +14,16 @@ toDoForm.addEventListener("submit",(e)=>{
    TodoInp.value=""
 
    
-   let dones =document.querySelector(".done");
+   let dones =document.querySelectorAll(".done");
    dones.forEach(item => {
     item.addEventListener("click",function(){
     this.parentElement.previousElementSibling.style.textDecoration="line-through"
     })
       });
+});
+let removes= document.querySelectorAll(".remove");
+removes.forEach(item => {
+    item,addEventListener("click",function(){
+        this.parentElement.previousElementSibling.style.display="none"
+    })
 });
